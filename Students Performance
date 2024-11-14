@@ -1,0 +1,67 @@
+# Project Name : Students Performance
+
+# Taks: Implement a support vector machine (SVM) 
+
+# objective: This project applies Support Vector Machine (SVM) classification to predict student performance based on various academic and demographic features.
+The project includes data preprocessing, exploratory data analysis (EDA), and a binary classification model to predictwhether a student will "pass" or "fail" based 
+on their average score.
+
+# Project Overview
+This project aims to:
+1) Explore and analyze student performance data.
+2)Preprocess data to prepare for model training.
+3)Train an SVM model to classify students as "Pass" or "Fail" based on their average score.
+4)Evaluate model performance using metrics such as accuracy, precision, recall, and F1-score.
+
+# Dataset
+
+Source: The dataset (Cleaned_Students_Performance.csv) includes student demographic details and scores.
+Features:
+1) gender: Gender of the student, encoded as 0 and 1.
+2) race_ethnicity: Categorical groups representing ethnicity.
+3) parental_level_of_education: Highest educational level of the student's parents.
+4) lunch: Type of lunch (standard or free/reduced).
+5) test_preparation_course: Whether the student completed a test preparation course.
+6) math_score, reading_score, writing_score: Individual subject scores.
+7) total_score, average_score: Total and average scores across subjects.
+
+Exploratory Data Analysis (EDA)
+
+Key insights from the EDA include:
+
+Score Distributions: Histograms reveal score distributions for math, reading, and writing.
+Correlations: A heatmap shows correlations between numerical features, helping to understand feature interactions.
+Boxplots: Visualizations for categories (gender, lunch type, test preparation) show trends in average scores.
+
+Model Implementation
+1. Data Preprocessing
+Created a binary target variable, pass_fail, based on a threshold of the average score (e.g., 70).
+Standardized features to improve model performance.
+2. SVM Model
+Implemented an SVM classifier with a linear kernel.
+Split data into training and testing sets to evaluate model performance.
+3. Evaluation
+Calculated accuracy, precision, recall, and F1-score to assess the model's effectiveness.
+
+Results
+The model achieved an accuracy of 85% on the test set, along with the following classification metrics:
+Metric	Pass (1)	Fail (0)
+Precision	0.90	0.80
+Recall	0.85	0.88
+F1-Score	0.87	0.84
+
+Conclusion :
+This project demonstrates how to use SVM for student performance classification. 
+The approach can be further improved by experimenting with different kernels, feature engineering, and hyperparameter tuning.
+
+Future Work:
+1)Hyperparameter Tuning: Try optimizing SVM parameters to improve accuracy.
+2)Feature Engineering: Create new features that could impact student performance.
+
+
+
+
+
+
+
+
